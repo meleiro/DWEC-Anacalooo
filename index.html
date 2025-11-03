@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kioso Anacalo · Modularidad y Asincronía, de noche y de día</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Kioso Anacalo</h1>
+    <h2>Modularidad y manejo asíncrono en JavaScript</h2>
+  </header>
+
+  <main>
+    <section id="teoria">
+      <h3>1. Explicación del tema</h3>
+      <p>
+        La modularidad y el manejo asíncrono son pilares del desarrollo moderno en JavaScript y React.
+        La modularidad permite dividir el código en módulos reutilizables y el manejo asíncrono evita bloquear la ejecución
+        al trabajar con procesos que tardan (como peticiones a APIs).
+      </p>
+    </section>
+
+    <section id="esquema">
+      <h3>2. Esquema mental</h3>
+      <pre>
+MODULARIDAD Y ASINCRONÍA
+│
+├── MÓDULOS ES6
+│   ├─ export / import
+│   └─ Organización del código
+│
+├── CALLBACKS
+│   ├─ Funciones que se ejecutan después
+│   └─ Problema: "callback hell"
+│
+├── PROMESAS
+│   ├─ then(), catch(), finally()
+│   └─ Estados: pending, fulfilled, rejected
+│
+└── ASYNC / AWAIT
+    ├─ await → espera la resolución
+    ├─ try / catch → manejo de errores
+    └─ Código más limpio
+      </pre>
+    </section>
+
+    <section id="demo">
+      <h3>3. Demostración práctica</h3>
+      <p>Haz clic para simular una consulta a una API:</p>
+      <button id="btnConsultar">Consultar reservas</button>
+      <div id="resultado"></div>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2025 Kioso Anacarlo</small>
+  </footer>
+
+</body>
+</html>
